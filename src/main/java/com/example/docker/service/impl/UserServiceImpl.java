@@ -6,6 +6,8 @@ import com.example.docker.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @ClassName UserServiceImpl
  * @Description
@@ -22,5 +24,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public User queryUser(Long id) {
         return userMapper.queryUser(id);
+    }
+
+    @Override
+    public Integer insertUser(User user) {
+        return userMapper.insertUser(user);
+    }
+
+    @Override
+    public Integer insertUsers(List<User> users) {
+        return userMapper.insertUsers(users);
     }
 }

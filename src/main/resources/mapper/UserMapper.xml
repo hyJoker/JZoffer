@@ -3,7 +3,7 @@
 <mapper namespace="com.example.docker.mapper.UserMapper">
 
 
-    <select id="queryUser" resultType="com.example.docker.bean.User">
-      select * from t_user t where t.id=#{id}
-    </select>
+    <!--<select id="queryUser" resultType="com.example.docker.bean.User">-->
+      <!--select * from t_user t where t.id=#{id}-->
+    <!--</select>-->
 </mapper>
